@@ -1,0 +1,30 @@
+<ion-view title="Rooms">
+    <ion-content padding="false">        
+          <ion-list class="room">
+            <ion-item ng-repeat="room in rooms"
+                              item="room"
+                              href="#/app/rooms/{{room.id}}" class="rooms">
+            <div class="room-container">
+              <img ng-src="img/{{room.img}}" class="centered">
+              <div class="room-info">
+                <div class="room-name">{{room.title}}</div>
+                <div class="room-stats">
+                  <div class="pull-left">
+                    <span class="icon-thermostat"></span>
+                    <span class="room-statnum">{{room.thermostatValue}}&#176;</span>
+                  </div>
+                  <div class="pull-left">
+                    <span class="icon-light"></span>
+                    <span class="room-statnum">{{room.numOfLightsOn}}<span>on</span></span>
+                  </div>
+                  <div class="pull-left">
+                    <span class="icon-camera"></span>
+                    <span class="room-statnum">{{room.numOfCamerasOn}}<span>on</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-item>
+        </ion-list>
+    </ion-content>
+</div></ion-view>

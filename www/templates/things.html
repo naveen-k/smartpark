@@ -1,0 +1,24 @@
+<ion-view view-title="Things">
+    <ion-content padding="false">
+          <ul class="things">
+            <li ng-repeat="thing in things">
+              <a ng-href="{{thing.link}}">
+                <div class="icons">
+                  <span class="icon-{{thing.iconClass}}"></span>
+                </div>
+                <div class="pull-left">
+                  <h6>{{thing.title}}</h6>
+                  <span class="things-num">{{thing.count}}</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#app/things/add-newdevice" class="text-decoration-none">
+                <div class="text-center addnew">
+                  <b>+</b>New
+                </div>
+              </a>
+            </li>
+          </ul>
+    </ion-content>
+</ion-view>

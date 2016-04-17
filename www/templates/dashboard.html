@@ -1,0 +1,58 @@
+<ion-view title="Dashboard">
+    <ion-content padding="false" scroll="false">
+          <div class="dashboard-bg hom-base has-header">
+            <header>{{roomTitle}}<span class="icon-menu-room"></span></header>
+          </div>
+    </ion-content>
+	<div>
+		<ul class="things dashboard">
+            <li class="title">
+              <h3>{{homeTitle}}</h3>
+            </li>
+            <li>
+              <a href="">
+                <div class="icons">
+                  <span class="icon-thermostat"></span>
+                </div>
+                <div class="pull-left">
+                  <h6>Thermostat</h6>
+                  <span class="things-num">{{thermostatValue}}</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="icons">
+                  <span class="icon-light"></span>
+                </div>
+                <div class="pull-left">
+                  <h6>Lights</h6>
+                  <span class="things-num">{{numOfLightsOn}}<span>on</span></span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#app/things/locks">
+                <div class="icons">
+                  <span class="icon-lock"></span>
+                </div>
+                <div class="pull-left">
+                  <h6>Locks</h6>
+                  <span class="things-num">{{numOfLocksLocked}}<span>locked</span></span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="icons">
+                  <span class="icon-menu-scene"></span>
+                </div>
+                <div class="pull-left">
+                  <h6>Scene</h6>
+                  <span class="things-num">{{scene}}</span>
+                </div>
+              </a>
+            </li>
+        </ul>
+	</div>
+</ion-view>

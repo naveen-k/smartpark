@@ -1,0 +1,114 @@
+<ion-view view-title="Rooms">
+    <ion-content padding="false">
+  		<div class="room switch-norm">
+            <div class="room-container bedroom">
+              <div class="room-info">
+                <div class="room-name">{{room.title}}</div>
+              </div>
+            </div>
+            <ul class="list-single">
+              <li>
+                <div class="switch-info pull-left">
+                  <a href=""><div class="info-text">Bathroom</div></a>
+                </div>
+                <div class="switch pull-right">
+                  <div class="onoffswitch">
+                    <input type="checkbox" name="room1" class="onoffswitch-checkbox" id="room-id1" >
+                    <label class="onoffswitch-label" for="room-id1">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </li>
+              <li>
+                <div class="switch-info pull-left">
+                  <a href=""><div class="info-text">Bedroom</div></a>
+                </div>
+                <div class="switch pull-right">
+                  <div class="onoffswitch">
+                    <input type="checkbox" name="room2" ng-model="checked" class="onoffswitch-checkbox" id="room-id2" checked>
+                    <label class="onoffswitch-label" for="room-id2">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <ul id="room-id2-sub" class="list-sub" ng-show="checked">
+                  <li>
+                    <div class="switch-info pull-left">
+                      <a href=""><div class="info-text">Left Reading Light</div></a>
+                    </div>
+                    <div class="switch pull-right">
+                      <div class="onoffswitch">
+                        <input type="checkbox" name="light1" class="onoffswitch-checkbox" id="light-id1" >
+                        <label class="onoffswitch-label" for="light-id1">
+                          <span class="onoffswitch-inner"></span>
+                          <span class="onoffswitch-switch"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="range-container row">
+                      <div class="col-xs-1 col-sm-1"><span class="icon-brightness dark"></span></div>
+                      <div class="col-xs-10 col-sm-10 range-meter">
+                        <div class="range-bg"></div>
+                        <input type="range" name="light1-range"  min="0" max="100" value="0" />
+                      </div>
+                      <div class="col-xs-1 col-sm-1"><span class="icon-brightness bright"></span></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="switch-info pull-left">
+                      <a href=""><div class="info-text">Right Reading Light</div></a>
+                    </div>
+                    <div class="switch pull-right">
+                      <div class="onoffswitch">
+                        <input type="checkbox" name="light2" class="onoffswitch-checkbox" id="light-id2" >
+                        <label class="onoffswitch-label" for="light-id2">
+                          <span class="onoffswitch-inner"></span>
+                          <span class="onoffswitch-switch"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="range-container row">
+                      <div class="col-xs-1 col-sm-1"><span class="icon-brightness dark"></span></div>
+                      <div class="col-xs-10 col-sm-10 range-meter">
+                        <div class="range-bg"></div>
+                        <input type="range" name="light2-range"  min="0" max="100" value="0" />
+                      </div>
+                      <div class="col-xs-1 col-sm-1"><span class="icon-brightness bright"></span></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="switch-info pull-left">
+                      <a href=""><div class="info-text">Cove Light</div></a>
+                    </div>
+                    <div class="switch pull-right">
+                      <div class="onoffswitch">
+                        <input type="checkbox" name="light3" class="onoffswitch-checkbox" id="light-id3" >
+                        <label class="onoffswitch-label" for="light-id3">
+                          <span class="onoffswitch-inner"></span>
+                          <span class="onoffswitch-switch"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="range-container row">
+                      <div class="col-xs-1 col-sm-1"><span class="icon-brightness dark"></span></div>
+                      <div class="col-xs-10 col-sm-10 range-meter">
+                        <div class="range-bg"></div>
+                        <input type="range" name="light3-range" min="0" max="100" value="0" />
+                      </div>
+                      <div class="col-xs-1 col-sm-1"><span class="icon-brightness bright"></span></div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+         </div>
+    </ion-content>
+</ion-view>

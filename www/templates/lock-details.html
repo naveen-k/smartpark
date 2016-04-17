@@ -1,0 +1,56 @@
+<ion-view view-title="Locks">
+    <ion-content padding="false">
+  		<div class="detail-info">
+          <div class="img-container"><img src="img/{{lock.img}}"></div>
+          <span class="detail-name">{{lock.description}}</span>
+          <div class="clearfix"></div>
+          <ul class="list-single">
+            <li>
+              <div class="pull-left">
+                <span class="detail-label switch-label">Status</span>
+              </div>
+              <div class="pull-right">
+                <div class="switch">
+                  <div class="onoffswitch">
+                    <input type="checkbox" name="status" ng-checked="{{lock.status == 1}}" class="onoffswitch-checkbox" id="status-id{{lock.id}}" >
+                    <label class="onoffswitch-label" for="status-id{{lock.id}}">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"><span class="icon-switch-lock"></span></span>
+                    </label>
+                    <div class="status"><div class="status-off">Unlocked</div>Locked</div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li>
+              <div class="pull-left">
+                <span class="detail-label">Location</span>
+              </div>
+              <div class="pull-right">
+                <a href="" class="text-decoration-none"><div class="detail-label-info">{{lock.location}}<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li>
+              <div class="pull-left">
+                <span class="detail-label">Notifications</span>
+              </div>
+              <div class="pull-right">
+                <a href="" class="text-decoration-none"><div class="detail-label-info">{{lock.notifications}}<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li>
+              <div class="pull-left">
+                <span class="detail-label">Timeline</span>
+              </div>
+              <div class="pull-right">
+                <a href="" class="text-decoration-none"><div class="detail-label-info"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+        </div>
+    </ion-content>
+</ion-view>

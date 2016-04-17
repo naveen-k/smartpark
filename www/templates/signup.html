@@ -1,0 +1,23 @@
+<ion-view view-title="Sign Up">
+    <div class="hom-login hom-sign-up">
+        <div class="btn-container">
+            <form ng-submit="doSignUpAction()">
+                <ion-list>
+                    <label class="item item-input form-group">
+                        <input type="text" placeholder="Name" class="text-center" ng-model="creds.first_name">
+                    </label>
+                    <label class="item item-input form-group">
+                        <input type="email" placeholder="Email" class="text-center" ng-model="creds.email">
+                    </label>
+                    <label class="item item-input form-group">
+                        <input type="password" placeholder="Password" class="text-center" ng-model="creds.password">
+                    </label>
+                </ion-list>
+                <button type="submit" class="button button-stable btn-hom button-block button-hom">Create</button>
+    			<button type="button" class="button button-clear btn-chevron" ng-click="doGoBackAction()">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back
+                </button>
+            </form>
+        </div>
+    </div>
+</ion-view>

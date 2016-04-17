@@ -1,0 +1,161 @@
+{
+	"home": {
+		"id": 1,
+		"title": "MY hōm",
+		"rooms": [
+			{
+				"id": 1,
+				"title": "Living Room",
+				"img": "sample-livingroom.png",
+				"thermostatValue": 74,
+				"scene": "awa",
+				"lights": [
+					{
+						"id": 1,
+						"title": "LED1",
+						"status": 1
+					},
+					{
+						"id": 2,
+						"title": "LED2",
+						"status": 0
+					}
+				],
+				"locks": [
+					{
+						"id": 1,
+						"title": "Back Door",
+						"description": "Kevo Bluetooth smart device",
+						"location": "Back Door",
+						"notifications": "ON",
+						"img": "sample-lock.png",
+						"status": 0
+					},
+					{
+						"id": 2,
+						"title": "Front Door",
+						"description": "Kevo Bluetooth smart device",
+						"location": "Front Door",
+						"notifications": "OFF",
+						"img": "sample-lock.png",
+						"status": 1
+					}
+				],
+				"cameras": [
+					{
+						"id": 1,
+						"title": "Cam1",
+						"status": 0
+					},
+					{
+						"id": 2,
+						"title": "Cam2",
+						"status": 1
+					}
+				]
+			},
+			{
+				"id": 2,
+				"title": "Bedroom",
+				"img": "sample-bedroom.png",
+				"thermostatValue": 76,
+				"scene": "awa",
+				"lights": [
+					{
+						"id": 3,
+						"title": "LED1",
+						"status": 1
+					},
+					{
+						"id": 4,
+						"title": "LED2",
+						"status": 1
+					}
+				],
+				"locks": [
+					{
+						"id": 3,
+						"title": "Master Bedroom",
+						"description": "Kevo Bluetooth smart device",
+						"location": "Master Bedroom",
+						"notifications": "ON",
+						"img": "sample-lock.png",						
+						"status": 0
+					},
+					{
+						"id": 4,
+						"title": "Guest House",
+						"description": "Kevo Bluetooth smart device",
+						"location": "Guest House",
+						"notifications": "ON",
+						"img": "sample-lock.png",
+						"status": 1
+					}
+				],
+				"cameras": [
+					{
+						"id": 1,
+						"title": "Cam1",
+						"status": 0
+					},
+					{
+						"id": 2,
+						"title": "Cam2",
+						"status": 1
+					}
+				]
+			},
+			{
+				"id": 3,
+				"title": "Bedroom",
+				"img": "sample-bedroom.png",
+				"thermostatValue": 76,
+				"scene": "awa",
+				"lights": [
+					{
+						"id": 1,
+						"title": "LED1",
+						"status": 1
+					},
+					{
+						"id": 2,
+						"title": "LED2",
+						"status": 1
+					}
+				],
+				"locks": [
+					{
+						"id": 5,
+						"title": "Lock1",
+						"description": "Kevo Bluetooth smart device",
+						"location": "Guest House 2",
+						"notifications": "ON",
+						"img": "sample-lock.png",
+						"status": 0
+					},
+					{
+						"id": 6,
+						"title": "Lock2",
+						"description": "Kevo Bluetooth smart device",
+						"location": "Guest House 3",
+						"notifications": "OFF",
+						"img": "sample-lock.png",
+						"status": 1
+					}
+				],
+				"cameras": [
+					{
+						"id": 1,
+						"title": "Cam1",
+						"status": 0
+					},
+					{
+						"id": 2,
+						"title": "Cam2",
+						"status": 1
+					}
+				]
+			}
+		]
+	}
+}

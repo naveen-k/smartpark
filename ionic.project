@@ -1,0 +1,12 @@
+{
+  "name": "smartpark",
+  "app_id": "c9e68c28",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

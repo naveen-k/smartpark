@@ -1,0 +1,23 @@
+<ion-view view-title="Locks">
+    <ion-content padding="false">
+  		<ul class="list-single">
+          <li ng-repeat="lock in locks">
+            <div class="switch">
+              <div class="onoffswitch">
+                <input type="checkbox" name="lock{{lock.id}}" ng-checked="{{lock.status == 1}}" class="onoffswitch-checkbox" id="lock-id{{lock.id}}">
+                <label class="onoffswitch-label" for="lock-id{{lock.id}}">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"><span class="icon-switch-lock"></span></span>
+                </label>
+                <div class="status"><div class="status-off">Unlocked</div>Locked</div>
+              </div>
+            </div>
+            <div class="switch-info">
+              <h6>{{lock.location}}</h6>
+              <a href="#/app/things/locks/{{lock.id}}"><div class="info-text">{{lock.description}}<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></a>
+            </div>
+            <div class="clearfix"></div>
+          </li>
+  		</ul>
+    </ion-content>
+</ion-view>

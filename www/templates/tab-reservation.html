@@ -1,0 +1,33 @@
+<ion-view view-title="RESERVATION">
+  <ion-content>
+
+    <ion-list>
+    <a class="item item-thumbnail-left item-icon-right" href="#">
+          <img src="img/sample-livingroom.png" style="width: 64px; height: 64px">
+          <i class="icon ion-chevron-right icon-accessory"></i>
+          <h2><b>28 State Street Parking Garage</b></h2>
+          <p>28 State St. <br/>Boston MA 02109</p>
+        </a>
+ 
+
+		<div class="item item-divider">
+   		 <h3 align="center"><b>Past Reservations</b></h3>
+ 	 	</div> 
+
+     <!-- <a class="item item-thumbnail-left item-icon-right" href="#"><h3><b>Past Reservations</b></h3></a> -->
+
+
+      <ion-item class="item-remove-animate  item-thumbnail-left item-icon-right " ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/reservation/{{chat.id}}" >
+        <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+        <h2><b>{{chat.name}}</b></h2>
+        <h3>{{chat.name}}</h3>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
